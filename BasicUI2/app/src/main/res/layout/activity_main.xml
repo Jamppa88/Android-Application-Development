@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fi.jamk.k8958.basicui2.MainActivity">
+
+    <TableLayout
+        android:stretchColumns="1"
+        android:layout_width="323dp"
+        android:layout_height="471dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-6dp"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="495dp"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:text="@string/login" />
+            <AutoCompleteTextView
+                android:id="@+id/login_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="8dp">
+            <TextView
+                android:text="@string/password" />
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:text="" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/login_btn"
+                android:onClick="loginClicked"
+                android:text="Login" />
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

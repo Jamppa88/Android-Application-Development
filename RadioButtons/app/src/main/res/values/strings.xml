@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RadioButtons</string>
+    <string name="meatballs">Meatballs</string>
+    <string name="chicken">Chicken</string>
+    <string name="fish">Fish</string>
+    <string name="steak">Steak</string>
+    <string name="carrots">Carrots</string>
+</resources>
