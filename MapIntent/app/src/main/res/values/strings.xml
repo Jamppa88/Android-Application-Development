@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Map Intent</string>
-    <string name="textView"></string>
+    <string name="entry_text">Give a location (lat, lng):</string>
+    <string name="btn_text">Show a Map</string>
 </resources>
