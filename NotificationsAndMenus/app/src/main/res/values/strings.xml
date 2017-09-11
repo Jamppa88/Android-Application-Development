@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">NotificationsAndMenus</string>
+    <string name="search">Search</string>
+    <string name="call">Call</string>
+    <string name="pie">Make into a Pie</string>
+    <string name="changeText">Change Hello text</string>
+    <string name="quit">Quit</string>
+
+    <string name="call_toast">You clicked Call</string>
+    <string name="search_toast">You clicked Search</string>
+    <string name="pie_toast">This app is now a pie ;)</string>
+    <string name="quit_text">You clicked Quit</string>
+    <string name="cancel_toast">Cancelled</string>
+
+    <string name="dialog_content">Are you sure you want to make the application into a pie?</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">Cancel</string>
+    <string name="dialog_changeText">Change Hello Text</string>
+
+    <string name="notif_title">Here be title</string>
+    <string name="notif_content">And here we\'ll tell more about the notification</string>
+
+</resources>

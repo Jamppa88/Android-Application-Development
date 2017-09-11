@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_black"
+        android:title="@string/search"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_call"
+        android:icon="@drawable/ic_action_call"
+        android:title="@string/call"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_pie"
+        android:icon="@drawable/ic_action_pie"
+        android:title="@string/pie"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/changeText"
+        android:title="@string/changeText"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_quit"
+        android:title="@string/quit"
+        app:showAsAction="never"/>
+
+</menu>
