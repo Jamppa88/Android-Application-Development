@@ -5,6 +5,8 @@
     <string name="pie">Make into a Pie</string>
     <string name="changeText">Change Hello text</string>
     <string name="quit">Quit</string>
+    <string name="result_text">This is where the notification takes you :)</string>
+    <string name="result_btn_back">Back to Main</string>
 
     <string name="call_toast">You clicked Call</string>
     <string name="search_toast">You clicked Search</string>
@@ -17,7 +19,7 @@
     <string name="dialog_no">Cancel</string>
     <string name="dialog_changeText">Change Hello Text</string>
 
-    <string name="notif_title">Here be title</string>
-    <string name="notif_content">And here we\'ll tell more about the notification</string>
+    <string name="notify_title">Here be title</string>
+    <string name="notify_content">And here we\'ll tell more about the notification</string>
 
 </resources>

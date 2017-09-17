@@ -3,8 +3,13 @@ package fi.jamk.k8958.notificationsandmenus;
 import android.app.DialogFragment;
 import android.app.Notification;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.app.TaskStackBuilder;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.NotificationCompat;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -21,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements ChangeTextDialogF
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
     }
 
     //Menu icons are inflated just as they were with actionbar
@@ -37,15 +43,27 @@ public class MainActivity extends AppCompatActivity implements ChangeTextDialogF
             case R.id.action_call:
                 //Toast.makeText(getApplicationContext(), R.string.call_toast, Toast.LENGTH_SHORT).show();
 
+                // create action intent to open application in device (ResultActivity)
+                Intent contentIntent = new Intent(this,ResultActivity.class);
+                // Adds the back stack - see manifest
+                TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
+                // adds the Intent to the top of the stack
+                stackBuilder.addParentStack(ResultActivity.class);
+                // adds the Intent to the top of the stack
+                stackBuilder.addNextIntent(contentIntent);
+                // gets a PendingIntent containing the entire back stack
+                PendingIntent contentPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
                 // Lets make a notification :)
-                Notification notification = new Notification.Builder(this)
+                Notification notification = new NotificationCompat.Builder(this)
                         .setCategory(Notification.CATEGORY_MESSAGE)
-                        .setContentTitle(R.string.notif_title)
-                        .setContentText(R.string.notif_content)
+                        .setContentTitle("Here be title")
+                        .setContentText("Here be content")
                         .setSmallIcon(R.drawable.ic_action_call)
                         .setAutoCancel(true)
+                        .setContentIntent(contentPendingIntent)
                         .setVisibility(Notification.VISIBILITY_PUBLIC)
                         .build();
+
                 NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
                 notificationManager.notify(notification_id, notification);
                 notification_id++;
