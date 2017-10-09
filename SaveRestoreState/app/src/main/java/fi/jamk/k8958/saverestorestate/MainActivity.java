@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements TextEntryDialogFr
                 textView.setText(text);
             }
         }
-        
+
     }
 
     @Override
